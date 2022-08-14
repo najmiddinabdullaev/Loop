@@ -14,35 +14,28 @@ body{
   display: flex;
   flex-direction: column;
   height: 100%;
+  padding: 0;
+  margin: 0;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #eb9586;
-  color: #fff;
-  overflow-x: hidden;
+  background-color: #222;
+  color: #222;
 }
 
-
-
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.img{
+  max-width: 100%;
+  height: auto;
 }
+
 
 
 /* CONTAINER */
 .container{
   width: 100%;
-  max-width: 640px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1200px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -50,6 +43,118 @@ body{
 
 .main-content{
   flex-grow: 1;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+
+
+.profile-setting {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #efd854;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.pofile-settings-form {
+}
+
+.profile-settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.profile-settings-title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.profile-seettings-close-link {
+  display: flex;
+}
+
+.profile-settings-form-body {
+  position: relative;
+  left: 40px;
+  padding: 60px 30px 40px;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.profile-settings-avatar{
+  position: absolute;
+  left: 30px;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.profile-settings-form-row{
+  display: flex;
+}
+
+.profile-settings-form-row:not(:last-child){
+  margin-bottom: 24px;
+}
+
+.profile-settings-form-row .profile-settings-form-group{
+  width: 50%;
+  margin-bottom: 0;
+}
+
+.profile-settings-form-group {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.profile-settings-form-group:not(:last-child){
+  margin-bottom: 24px;
+}
+
+.profile-settings-form-label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.profile-settings-form-field {
+  display: block;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 0;
+  border-bottom: 1px solid #555;
+}
+
+.profile-settings-form-field-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.profile-settings-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px;
+}
+
+.profile-settings-form-action {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.profile-settings-form-action:not(:last-child){
+  margin-right: 40px;
 }
